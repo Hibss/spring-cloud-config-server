@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: spring-cloud-config-server
+#  profiles:
+#    active: native #使用本地配置 需要注释掉git配置
+  cloud:
+    config:
+      server:
+        git:
+          uri: http://gitlab.czfintech.com.cn/shengyinyuan/spring-cloud-config-server.git
+          search-paths: '${profile}'
+          username: shengyinyuan
+          password: sheng1988
+server:
+  port: 9005
+eureka:
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+  client:
+    register-with-eureka: true  #用不用注册自己
+    fetch-registry: true # 要不要去注册中心获取其他服务地址
+    service-url:
+      defaultZone: http://localhost:8005/eureka/
+

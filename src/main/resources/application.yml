@@ -8,7 +8,7 @@ spring:
       server:
         git:
           uri: http://gitlab.czfintech.com.cn/shengyinyuan/spring-cloud-config-server.git
-          search-paths: '${profile}'
+          search-paths: /config-repo
           username: shengyinyuan
           password: sheng1988
 server:

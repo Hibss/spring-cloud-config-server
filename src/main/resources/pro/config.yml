@@ -1,0 +1,5 @@
+hello: welcome to pro enviroment
+user:
+    userName: dev/张三
+    sex: 男
+    age: 18application.yml

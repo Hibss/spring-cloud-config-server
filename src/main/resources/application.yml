@@ -7,12 +7,9 @@ spring:
     config:
       server:
         git:
-          uri: http://gitlab.czfintech.com.cn/shengyinyuan/spring-cloud-config-server
-          username: shengyinyuan
-          password: sheng1988
-#          uri: https://github.com/Hibss/spring-cloud-config-server.git
-#          username: zhongba520@126.com
-#          password: sheng@1009
+          uri: https://github.com/Hibss/spring-cloud-config-server.git
+          username: zhongba520@126.com
+          password: sheng@1009
           search-paths: config-server
           basedir: config-repo
 server:

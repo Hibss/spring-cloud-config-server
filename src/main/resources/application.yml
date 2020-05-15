@@ -7,10 +7,13 @@ spring:
     config:
       server:
         git:
-          uri: http://gitlab.czfintech.com.cn/shengyinyuan/spring-cloud-config-server.git
-          search-paths: config-repo
+          uri: http://gitlab.czfintech.com.cn/shengyinyuan/spring-cloud-config-server/
           username: shengyinyuan
           password: sheng1988
+#          uri: http
+#          username: shengyinyuan
+#          password: sheng1988
+          search-paths: config-repo
 server:
   port: 9005
 eureka:

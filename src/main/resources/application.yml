@@ -8,8 +8,8 @@ spring:
       server:
         git:
           uri: https://github.com/Hibss/spring-cloud-config-server
-          username: zhongba520@126.com
-          password: sheng@1009
+          username: 
+          password: 
           search-paths: config-server
           default-label: master
           basedir: /config-repo

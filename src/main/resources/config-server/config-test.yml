@@ -3,20 +3,3 @@ user:
     userName: dev/张三
     sex: 男
     age: 18
-spring:
-  application:
-    name: spring-cloud-config-server
-#  profiles:
-#    active: native #使用本地配置 需要注释掉git配置
-  cloud:
-    config:
-      server:
-        git:
-          uri: http://gitlab.czfintech.com.cn/shengyinyuan/spring-cloud-config-server
-          username: shengyinyuan
-          password: sheng1988
-          search-paths: config-server
-          basedir: config-repo
-#          uri: https://github.com/Hibss/spring-cloud-config-server.git
-#          username: zhongba520@126.com
-#          password: sheng@1009
